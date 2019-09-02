@@ -1,6 +1,5 @@
 import { 
     CHANGE_SEARCH_FIELD, 
-    CHANGE_SEARCH_FIELD_AGE,
     REQUEST_PLAYERS_PENDING,
     REQUEST_PLAYERS_SUCCESS,
     REQUEST_PLAYERS_FAILED
@@ -15,28 +14,12 @@ export const searchPlayers = (state = initialStateSearch, action = {}) => {
     switch(action.type) {
         case CHANGE_SEARCH_FIELD:
             return Object.assign({}, state, {searchField: action.payload} )
-        case CHANGE_SEARCH_FIELD_AGE:
-            return Object.assign({}, state, {searchFieldAge: action.payload} )
+        
         default:
             return state;
     }
 }
 
-const initialStateSearchAge = {
-    searchFieldAge: ''
-    
-}
-
-export const searchPlayersAge = (state = initialStateSearchAge, action = {}) => {
-    
-    
-    switch(action.type) {
-        case CHANGE_SEARCH_FIELD_AGE:
-            return Object.assign({}, state, {searchFieldAge: action.payload} )
-        default:
-            return state;
-    }
-}
 
 
 

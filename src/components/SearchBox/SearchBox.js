@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBox.css'
 
-const SearchBox = ({ searchChange, players, onAgeChange }) => {
+const SearchBox = ({ searchChange, players}) => {
   return  (
     
     <div className='pa2'>
@@ -13,14 +13,7 @@ const SearchBox = ({ searchChange, players, onAgeChange }) => {
           onChange={searchChange}
         />
       </label>
-      <label>
-        <input
-          className='pa3 ba b--black bg-white'
-          type='search'
-          placeholder='Search age of players'
-          onChange={onAgeChange}
-        />
-      </label>
+      
     </div>
   );
 }
